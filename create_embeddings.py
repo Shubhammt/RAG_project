@@ -1,15 +1,15 @@
 import torch
 import open_clip
 import os
-# os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import multiprocessing
 import json
 import numpy as np
 from tqdm import tqdm
+from config import *
 import warnings
 warnings.filterwarnings("ignore")
-# from huggingface_hub import login
-# login(token="")
+
 
 path = r"D:\text-to-image-2M\data_512_2M"
 def get_files(folder):
